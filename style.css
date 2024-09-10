@@ -1,0 +1,13 @@
+/* Existing styles... */
+
+#resume [contenteditable="true"] {
+    border: 1px dashed #ccc;
+    padding: 5px;
+    min-height: 20px;
+  }
+  
+  #resume [contenteditable="true"]:focus {
+    outline: none;
+    border-color: #007BFF;
+  }
+  

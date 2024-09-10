@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Editable Resume Builder</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>Editable Resume Builder</h1>
+  </header>
+
+  <section id="form-section">
+    <form id="resume-form">
+      <h2>Personal Information</h2>
+      <label for="name">Name:</label>
+      <input type="text" id="name" required>
+      
+      <label for="email">Email:</label>
+      <input type="email" id="email" required>
+
+      <h2>Education</h2>
+      <label for="education">Degree/Qualification:</label>
+      <input type="text" id="education" required>
+
+      <h2>Work Experience</h2>
+      <label for="jobTitle">Job Title:</label>
+      <input type="text" id="jobTitle" required>
+      
+      <label for="company">Company:</label>
+      <input type="text" id="company" required>
+      
+      <h2>Skills</h2>
+      <label for="skills">Skills (comma separated):</label>
+      <input type="text" id="skills" required>
+      
+      <button type="submit">Generate Resume</button>
+    </form>
+  </section>
+
+  <section id="resume-section">
+    <h2>Generated Resume</h2>
+    <div id="resume">
+      <div id="resume-name" contenteditable="true">Your Name</div>
+      <p id="resume-email" contenteditable="true">Email: your.email@example.com</p>
+      
+      <h4>Education</h4>
+      <p id="resume-education" contenteditable="true">Degree/Qualification</p>
+      
+      <h4>Work Experience</h4>
+      <p id="resume-jobTitle" contenteditable="true">Job Title</p>
+      <p id="resume-company" contenteditable="true">Company</p>
+      
+      <h4>Skills</h4>
+      <ul id="resume-skills" contenteditable="true">
+        <li>Skill 1</li>
+        <li>Skill 2</li>
+      </ul>
+    </div>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
